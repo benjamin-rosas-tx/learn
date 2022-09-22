@@ -1,0 +1,70 @@
+Learning the vi and Vim editors
+by Arnold Robbins, Elbert Hanna, Linda Lamb
+
+I. Basic And Advanced Vi
+
+   vi is short for visual editor.
+
+   command mode is the inital or default mode.
+
+Opening and Closing Files
+
+  Opening : vi [filename]
+
+filename is optional
+
+Problem Opening Files
+
+Problems could be related to $TERM environment variable shoulb be set to the name of the terminal.
+
+There are two modes on Vi:
+
+* Comand mode
+Press ESC to force command mode.
+* Insert mode
+
+Saving and quitting a file
+
+comand to save and quit ZZ capitalized.
+also can save with ex comands :w and :q or :wq
+
+To quit without saving edits ex commands :e! wipe out all edits and return to original file
+ or :q! force quit and returns to prompt
+
+solve common problems saving with :w newfile or user different path 
+
+You can move the cursor with letters
+
+l to right
+k to up
+j to down
+h to left
+
+all in command mode.
+Also is possible to use Numeric arguments to move.
+as example you can move 8 positions to left with 8h
+
+Movement within aline 
+
+option wrapmargin as abbreviation is wm you can set how many chars should be allowed before insert a new line.
+
+to go to beginning of line type 0 digit zero
+to go to end of line pres $
+
+Movement by Text Blocks
+
+move cursor by bloks of text, words, sentes, paragraphs, etc. 
+
+w W key moves forward one word counting symbols and punctuation.
+b B to move back
+
+G to move to specific line. plain G go to the end of file, 1G to the top
+
+Simple edits
+
+a for append
+c for change
+d for delete
+p for put
+y copy a text
+x to delete a letter
