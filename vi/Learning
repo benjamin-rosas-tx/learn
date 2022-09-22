@@ -63,8 +63,116 @@ G to move to specific line. plain G go to the end of file, 1G to the top
 Simple edits
 
 a for append
+i insert text at beginning of line.
+o lowercase openn blankline below cursor
+O uppercase blank line above cursor
+s delete char at cursor and substitute text
+S Delete line and substitute text
+R oversrtike exiting characters with new chars.
 c for change
 d for delete
 p for put
 y copy a text
 x to delete a letter
+**************************************************
+comand to asterisc 50i*ESC
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+command to multiple 25a*_ESC
+test to replace || to &&
+  &&
+comand 2r& original text was ||.
+To replace several lines you can use numeric prefix and S
+
+replace to last lines
+
+Other use should be user R in order to replace values on a line.
+
+Replaed line etc etc
+
+
+Change values in the middle of word example
+
+Joining two lines with j
+
+With a screen editor you can scroll the page, move the cursor
+
+Review of Basic vi commands
+
+			change		Delete		copy
+
+one word		cw		dw		yw
+two words		2cw		2dw		2yw
+3 words bach		3cb		3db		3yb
+one line		cc		dd		yy or Y
+to end of line		c$ C		d$ D		y$
+to befinning of line 	c0		d0		y0
+single char		r		x X		yl yh
+5 chars			5s		5x		5yl
+
+
+Movement commands
+left	h
+down	j
+up	k
+right	l
+to first char of next line +
+to firs chr of preious line -
+to end of word e
+forward by word w
+backward by word b
+to end of line $
+to befinning of line 0
+
+Operations
+Place text from buffer P p
+
+Edit actions
+
+i	insert text at current position
+I 	Insert text at beginning of line
+a	Append text at current postion
+A	Append text at beginning of line
+o	Open new line below
+O	Open new line above
+S	Delete line and suvstite text
+R	Overstrike existing chars
+J	Join current and next line
+~	Toggle case
+.	Repeat action
+u	Undo last change
+U 	Restore line to original state
+
+
+Moving Around in a Hurry
+
+Movement by screens
+^F	Forward
+^B	backward
+^D	Down
+^U	Up
+
+z movements
+z Enter key 	moves screen with current line at top of screen
+z.		moves screen with current line at center of screen
+z-		moves screen with current line at botton
+
+
+Movement within a screen
+H	Move to home
+M	Move to middle
+L	Move to last line
+
+
+
+Movement by text blocks
+e	Move to end of word
+E	Move to end of word ignore punctueation
+(	Move to beginnig of current sentece.
+)	Move to beginning of next sentence.
+{	Move to beginning of current paragraph.
+}	Move to beginning of next paragraph.
+[[	Move to beginning of current section.
+]]	Move to beginning of next section.
+
+Movement by searches for patterns
+Movement by line number
